@@ -1,5 +1,6 @@
 import { createApp } from 'vue'
 import App from './App.vue'
+import { VueReCaptcha } from 'vue-recaptcha-v3'
 
 import './assets/main.css'
 // import $ from 'jquery'
@@ -15,4 +16,12 @@ import './assets/main.css'
 // import "./assets/js/validator.min.js"
 
 // createApp(App).mount('#app')
-createApp(App).mount('#fabtheme-body')
+
+const vue = createApp(App)
+vue.use(VueReCaptcha, {
+  siteKey: '6Lew6CchAAAAAG2u41SxBEmAtBUbJ7xzOiJoJ5gW',
+  loaderOptions: {
+    useRecaptchaNet: true
+  }
+})
+vue.mount('#fabtheme-body')
