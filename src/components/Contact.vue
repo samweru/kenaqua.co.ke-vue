@@ -28,23 +28,38 @@ export default{
 		},
 		async submitForm(event:any){
 
-			const contact = this;
-			contact.disableForm()
-			contact.btn_msg = "Wait.."
+			this.disableForm()
+			this.btn_msg = "Wait.."
 
-			await this.$recaptchaLoaded()
-			const token = await this.$recaptcha("contact_form")
+   			// @ts-ignore
+   			const loaded = await this.$recaptchaLoaded()
 
-			console.log(token)
+   			let token = ""
+   			if(loaded){
+	   			
+	   			// @ts-ignore
+				token = await this.$recaptcha("contact_form")
+			}
 
-			setTimeout(function(){
+			try{
 
-				contact.disableForm(false)
-				contact.btn_msg = "Failed: Try Again!"
+				const formData = new FormData()
+				formData.append('token', token)
+				formData.append('firstname', this.firstname)
+				formData.append('lastname', this.lastname)
+				formData.append('email', this.email)
+				formData.append('message', this.message)
 
-			}, 2000)
-			
-			console.log("submitted")
+				await this.axios.post("/contact/send", formData)
+
+				this.clearForm()
+				this.btn_msg = "Submitted."
+			}
+			catch(err){
+
+				this.disableForm(false)
+				this.btn_msg = "Failed: Try Again!"
+			}
 		}
 	}
 }

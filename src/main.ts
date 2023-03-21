@@ -1,6 +1,8 @@
 import { createApp } from 'vue'
 import App from './App.vue'
 import { VueReCaptcha } from 'vue-recaptcha-v3'
+import axios from 'axios'
+import VueAxios from 'vue-axios'
 
 import './assets/main.css'
 // import $ from 'jquery'
@@ -18,10 +20,12 @@ import './assets/main.css'
 // createApp(App).mount('#app')
 
 const vue = createApp(App)
+vue.use(VueAxios, axios)
 vue.use(VueReCaptcha, {
-  siteKey: '6Lew6CchAAAAAG2u41SxBEmAtBUbJ7xzOiJoJ5gW',
-  loaderOptions: {
-    useRecaptchaNet: true
-  }
+	siteKey: '6Lew6CchAAAAAG2u41SxBEmAtBUbJ7xzOiJoJ5gW',
+	loaderOptions: {
+		
+    	useRecaptchaNet: false
+  	}
 })
 vue.mount('#fabtheme-body')

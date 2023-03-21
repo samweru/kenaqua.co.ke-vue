@@ -13,7 +13,7 @@
 									<h4 class="card-title py-3">Actizyme</h4>
 									<p class="card-text">Clear up the problem of blocked drains and bad odours quickly and easily with Actizyme’s safe, natural and environmentally responsible drain treatment.
 Find all of the information you need to know about our great range of products.</p>
-									<img src="/imgres/actizyme-2.jpg">
+									<img class="service1-actizyme">
 								</div>
 							</div>
 							<div class="card fabtheme-services-2">
@@ -21,7 +21,7 @@ Find all of the information you need to know about our great range of products.<
 									<!-- <i class="far fa-star fa-2x"></i> -->
 									<h4 class="card-title py-3">Oasis Tablets</h4>
 									<p class="card-text">Oasis Water Purification Tablets are effervescent NaDCC tablets which purify water to make it safe to drink. They kill micro organisms in water to prevent dysentery, diarrhoea, cholera and other water borne diseases.</p>
-									<img src="/imgres/oasis-2.png">
+									<img class="service1-oasis">
 								</div>
 							</div>
 							<div class="card fabtheme-services-2">
@@ -29,7 +29,7 @@ Find all of the information you need to know about our great range of products.<
 									<!-- <i class="fas fa-users fa-2x"></i> -->
 									<h4 class="card-title py-3">Water Purifier & Dispenser</h4>
 									<p class="card-text">Water cleaning and dispensing equipment for making your healthy living</p>
-									<img src="/imgres/dispenser-3.jpg">
+									<img class="service1-dispenser">
 								</div>
 							</div>
 							<div class="card fabtheme-services-2">
@@ -38,7 +38,7 @@ Find all of the information you need to know about our great range of products.<
 									<h4 class="card-title py-3">Aqua Afya</h4>
 									<p class="card-text">Aquafya Mineral water is sourced from deep based water aquifers where it is held after having passed through natural rock formations during which process it
 gets mineralized. The water is then pumped out, passed through ceramic filters for sediment removal, disinfected using ultraviolet light and bottled immediately thereafter.</p>
-									<img src="/imgres/aquaafya-5.png">
+									<img class="service1-aquaafya">
 								</div>
 							</div>
 						</div>

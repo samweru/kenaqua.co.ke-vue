@@ -456,3 +456,37 @@ h1,h2,h3{
 }
 /* END OF DOCUMENTATION */
 /* END OF CUSTOM CSS */
+
+img.service1-actizyme{
+
+  content:url(/imgres/actizyme-2.jpg)
+}
+
+img.service1-oasis{
+
+  content:url(/imgres/oasis-2.png)
+}
+
+img.service1-dispenser{
+
+  content:url(/imgres/dispenser-3.jpg)
+}
+
+img.service1-aquaafya{
+
+  content:url(/imgres/aquaafya-5.png)
+}
+
+img.service2-water-meter{
+
+  content: url(/imgres/water-meter-2.jpg)
+}
+
+img.service3-biodigester{
+
+  content: url(/imgres/biodigester-edit-1.png);
+  height: auto;
+  object-fit: cover;
+  object-position: bottom;
+  max-width: 100%;
+}
