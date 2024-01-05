@@ -490,3 +490,21 @@ img.service3-biodigester{
   object-position: bottom;
   max-width: 100%;
 }
+
+img.product1-aqutab-flo{
+
+  content: url(/imgres/aquatab-flo.png);
+  height: auto;
+  object-fit: cover;
+  object-position: bottom;
+  max-width: 100%;
+}
+
+img.product2-aquatab-inline{
+
+  content: url(/imgres/aquatab-inline.png);
+  height: auto;
+  object-fit: cover;
+  object-position: bottom;
+  max-width: 100%;
+}

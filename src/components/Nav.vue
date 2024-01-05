@@ -17,7 +17,7 @@
 					<a class="nav-link fabtheme-nav-link" href="#about">About</a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link fabtheme-nav-link" href="#services">Services</a>
+					<a class="nav-link fabtheme-nav-link" href="#product1">Products</a>
 				</li>
 				<li class="nav-item">
 					<a class="nav-link fabtheme-nav-link" href="#contact">Contact</a>
